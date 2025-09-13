@@ -33,9 +33,9 @@ int main() {
 
 The compilation process transforms human-readable code into executable programs :
 
-```
-Source Code (.cpp) → Compiler → Executable File (.exe) → Output
-```
+
+_Source Code (.cpp) → Compiler → Executable File (.exe) → Output_
+
 
 **Example of compilation process:**
 
