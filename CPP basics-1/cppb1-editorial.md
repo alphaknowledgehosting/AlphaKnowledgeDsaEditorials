@@ -138,34 +138,6 @@ bool flag = false;      // Boolean (1 byte)
 void;                   // Represents "nothing"
 ```
 
-**Derived Data Types:**
-
-```cpp
-int numbers = {1, 2, 3, 4, 5};  // Array
-int* ptr = &number;                 // Pointer
-int& ref = number;                  // Reference
-```
-
-**User-Defined Data Types:**
-
-```cpp
-struct Student {
-    string name;
-    int rollNumber;
-    float marks;
-};
-
-enum Color { RED, GREEN, BLUE };
-
-class Calculator {
-    public:
-        int add(int a, int b) {
-            return a + b;
-        }
-};
-```
-
-
 ### Naming Conventions
 
 Valid variable names must follow these rules : 
