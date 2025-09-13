@@ -92,6 +92,8 @@ int main() {
 
 Variables are named memory locations that store data. C++ provides various data types to handle different kinds of information. 
 
+<img src="https://github.com/alphaknowledgehosting/AlphaKnowledgeDsaEditorials/blob/main/CPP%20basics-1/DataTypestable.png?raw=true"/>
+
 ### Variable Declaration Examples
 
 ```cpp
@@ -231,7 +233,7 @@ cout << "Sum: " << (a + b + c) << endl;
 ## Operators in C++
 
 C++ provides various operators for different operations : 
-<img src="https://github.com/alphaknowledgehosting/AlphaKnowledgeDsaEditorials/blob/main/CPP%20basics-1/LoopsTable.png?raw=true"/>
+<img src="https://github.com/alphaknowledgehosting/AlphaKnowledgeDsaEditorials/blob/main/CPP%20basics-1/Operators%20Table.png?raw=true"/>
 
 ### Unary Operators
 
