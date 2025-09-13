@@ -26,7 +26,8 @@ The condition in a loop acts like a checkmark before each iteration; if it's tru
 
 **Iteration Execution**
 The update step in a loop serves as the final action before reevaluating the condition, whether the loop continues or stops, even if a "break" or an error occurred within the loop.
-
+Below is the Comparsion Table 
+<img src="https://github.com/alphaknowledgehosting/AlphaKnowledgeDsaEditorials/blob/main/CPP%20basics-1/LoopsTable.png?raw=true"/>
 ### For Loop
 
 A for loop in programming is used to repeatedly execute a block of code a specific number of times, controlled by an initial condition, a condition for continuation, and an update statement.[^1]

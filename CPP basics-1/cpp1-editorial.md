@@ -166,7 +166,7 @@ int main() {
 
 C++ supports various data types to store different kinds of data. Here are some commonly used ones:
 
-<img src="https://drive.google.com/file/d/105b4hy8IWwb7RxDvADnib0CfkRePqgzr/view?usp=sharing"/>
+<img src="https://github.com/alphaknowledgehosting/AlphaKnowledgeDsaEditorials/blob/main/CPP%20basics-1/DataTypestable.png?raw=true"/>
 
 **Example: Data Types and Sizes**
 
