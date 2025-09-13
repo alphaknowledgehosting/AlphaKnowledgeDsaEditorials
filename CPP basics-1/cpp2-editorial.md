@@ -30,7 +30,7 @@ Below is the Comparsion Table
 <img src="https://github.com/alphaknowledgehosting/AlphaKnowledgeDsaEditorials/blob/main/CPP%20basics-1/LoopsTable.png?raw=true"/>
 ### For Loop
 
-A for loop in programming is used to repeatedly execute a block of code a specific number of times, controlled by an initial condition, a condition for continuation, and an update statement.[^1]
+A for loop in programming is used to repeatedly execute a block of code a specific number of times, controlled by an initial condition, a condition for continuation, and an update statement. 
 
 **Syntax:**
 
@@ -68,7 +68,7 @@ int main() {
 
 ### While Loop
 
-A while loop in programming repeatedly executes a block of code as long as a specified condition remains true.[^1]
+A while loop in programming repeatedly executes a block of code as long as a specified condition remains true. 
 
 **Syntax:**
 
@@ -111,7 +111,7 @@ int main() {
 
 ### Do-while Loop
 
-A do-while loop in programming executes a block of code at least once and then repeatedly as long as a specified condition remains true.[^1]
+A do-while loop in programming executes a block of code at least once and then repeatedly as long as a specified condition remains true. 
 
 **Syntax:**
 
