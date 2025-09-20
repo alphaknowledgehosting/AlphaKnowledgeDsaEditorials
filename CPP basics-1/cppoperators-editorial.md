@@ -1,16 +1,3 @@
-<img src="https://r2cdn.perplexity.ai/pplx-full-logo-primary-dark%402x.png" style="height:64px;margin-right:32px"/>
-
-# [](https://www.geeksforgeeks.org/)
-
-54
-D
-[My Profile](https://www.geeksforgeeks.org/user/dangudubiypdwy/)[My Courses](https://www.geeksforgeeks.org/myCourses)[Leaderboard](https://practice.geeksforgeeks.org/leaderboard)[Explore Community](https://www.geeksforgeeks.org/community/)[Transaction History](https://practice.geeksforgeeks.org/transactions)[Saved Videos](https://www.geeksforgeeks.org/videos/watchlist/)[Edit Profile](https://www.geeksforgeeks.org/edit-profile/)[Logout](https://authapi.geeksforgeeks.org/logout/?to=https%3A%2F%2Fwww.geeksforgeeks.org%2Fbatch%2Fcpp-stl-2%2Ftrack%2Ffoundation-cpp-operators-2%2Farticle%2FNjc0MA%253D%253D)
-[Courses]()
-[Placement]()
-[Data Science]()
-[GATE]()
-Change Language
-Arithmetic Operators
 An operator is a symbol that operates on a value to perform specific mathematical or logical computations. They form the foundation of any programming language. In C++, we have built-in operators to provide the required functionality.
 An operator operates the operands. For example, 
 int c = a + b;
@@ -850,15 +837,3 @@ y >> 1: 3
 Alphaknowledge: Bitwise operator demo
 
 ***
-
-Using operators efficiently makes C++ code simple yet powerful. The examples above use "Alphaknowledge" to identify custom outputs and showcase each operator in practice.
-
-Would you like a PDF download for these editorial notes or a summary table for all operators?
-<span style="display:none">[^1][^2]</span>
-
-<div style="text-align: center">⁂</div>
-
-[^1]: https://www.geeksforgeeks.org
-
-[^2]: https://www.geeksforgeeks.org/user/dangudubiypdwy/
-
