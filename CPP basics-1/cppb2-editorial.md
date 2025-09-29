@@ -229,7 +229,7 @@ Length: 13
 ### Loops
 
 Loops allow us to repeat a block of code multiple times until a condition is met.
-
+ <img src="https://github.com/alphaknowledgehosting/AlphaKnowledgeDsaEditorials/blob/main/CPP%20basics-1/LoopsTable.png?raw=true"/>
 #### For Loop
 
 ```cpp
