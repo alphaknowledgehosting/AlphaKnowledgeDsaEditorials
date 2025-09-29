@@ -23,7 +23,6 @@ return 0;
 ```
 
 **Output:**
-
 ```
 
 (No output - this just declares an array)
@@ -46,7 +45,6 @@ return 0;
 ```
 
 **Output:**
-
 ```
 
 20
@@ -70,7 +68,6 @@ return 0;
 ```
 
 **Output:**
-
 ```
 
 20
@@ -98,7 +95,6 @@ return 0;
 ```
 
 **Output:**
-
 ```
 
 (No output - this just declares a 2D array)
@@ -121,7 +117,6 @@ return 0;
 ```
 
 **Output:**
-
 ```
 
 1
@@ -153,7 +148,6 @@ return 0;
 ```
 
 **Output:**
-
 ```
 
 17
@@ -186,7 +180,6 @@ return 0;
 ```
 
 **Output:**
-
 ```
 
 Hello, Earth!
@@ -214,7 +207,6 @@ return 0;
 ```
 
 **Output:**
-
 ```
 
 Enter a sentence: Hello World
@@ -242,7 +234,6 @@ return 0;
 ```
 
 **Output:**
-
 ```
 
 Good Morning!
@@ -273,7 +264,6 @@ return 0;
 ```
 
 **Output:**
-
 ```
 
 1 2 3 4 5
@@ -299,7 +289,6 @@ return 0;
 ```
 
 **Output:**
-
 ```
 
 1 2 3 4 5
@@ -325,7 +314,6 @@ return 0;
 ```
 
 **Output:**
-
 ```
 
 1 2 3 4 5
@@ -377,7 +365,6 @@ return 0;
 ```
 
 **Output:**
-
 ```
 
 Sum = 15
@@ -410,7 +397,6 @@ return 0;
 ```
 
 **Output:**
-
 ```
 
 Inside function: 15
@@ -440,7 +426,6 @@ return 0;
 ```
 
 **Output:**
-
 ```
 
 Inside function: 15
@@ -476,7 +461,6 @@ return 0;
 ```
 
 **Output:**
-
 ```
 
 99 40 30 40 50
