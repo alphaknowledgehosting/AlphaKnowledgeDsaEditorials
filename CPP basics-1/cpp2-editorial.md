@@ -156,7 +156,7 @@ int main() {
 
 ## Functions
 
-A function is a pre-defined set of instructions that processes input, performs a specific task, and provides an output, offering a convenient way to reuse code for repetitive tasks.[^6]
+A function is a pre-defined set of instructions that processes input, performs a specific task, and provides an output, offering a convenient way to reuse code for repetitive tasks. [6]
 
 **Syntax:**
 
@@ -223,11 +223,11 @@ int main() {
 
 ### Why do we use functions?
 
-We use functions to break down a program into smaller, reusable parts, making it easier to understand, maintain, and avoid repeating code.[^6]
+We use functions to break down a program into smaller, reusable parts, making it easier to understand, maintain, and avoid repeating code. [6]
 
 ### Passing Parameters to Functions
 
-**Pass by Value:** When parameters are passed this way, the original values provided by the caller are duplicated into the function's parameters, allowing changes inside the function without affecting the caller's values.[^6]
+**Pass by Value:** When parameters are passed this way, the original values provided by the caller are duplicated into the function's parameters, allowing changes inside the function without affecting the caller's values. [6]
 
 **Example:**
 
@@ -251,7 +251,7 @@ int main() {
 }
 ```
 
-**Pass by Reference:** In this approach, the main function's and function's parameters share the same memory, so changes in the function affect the main function's parameters directly.[^6]
+**Pass by Reference:** In this approach, the main function's and function's parameters share the same memory, so changes in the function affect the main function's parameters directly. [6]
 
 **Example:**
 
