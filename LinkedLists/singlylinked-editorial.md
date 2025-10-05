@@ -13,7 +13,7 @@ Each node in a linked list contains two parts:
 
 **Next Pointer**: Stores the address of the next node in memory.
 
-### C++ Implementation
+### Implementation
 
 ```cpp
 struct Node {
@@ -21,9 +21,6 @@ struct Node {
     struct Node* next;
 };
 ```
-
-
-### Java Implementation
 
 ```java
 class LinkedList {
@@ -39,9 +36,6 @@ class LinkedList {
     }
 }
 ```
-
-
-### Python Implementation
 
 ```python
 class Node:
@@ -79,7 +73,7 @@ class LinkedList:
 
 ## Creating a Simple Linked List
 
-### C++ Implementation
+### Implementation
 
 ```cpp
 #include <bits/stdc++.h>
@@ -112,9 +106,6 @@ int main() {
 }
 ```
 
-
-### Java Implementation
-
 ```java
 class Node {
     int data;
@@ -138,9 +129,6 @@ public class Main {
     }
 }
 ```
-
-
-### Python Implementation
 
 ```python
 class Node:
@@ -166,8 +154,6 @@ third.next = None
 
 ### Iterative Traversal
 
-#### C++ Implementation
-
 ```cpp
 void printList(Node* node) {
     while (node != NULL) {
@@ -176,9 +162,6 @@ void printList(Node* node) {
     }
 }
 ```
-
-
-#### Java Implementation
 
 ```java
 void printList(Node node) {
@@ -189,9 +172,6 @@ void printList(Node node) {
 }
 ```
 
-
-#### Python Implementation
-
 ```python
 def print_list(node):
     while node is not None:
@@ -199,14 +179,18 @@ def print_list(node):
         node = node.next
 ```
 
-**Time Complexity**: $O(n)$
-**Space Complexity**: $O(1)$
+
+### Time Complexity
+
+O(n) where n is the number of nodes in the linked list.
+
+### Space Complexity
+
+O(1) as we only use a constant amount of extra space.
 
 ***
 
 ### Recursive Traversal
-
-#### C++ Implementation
 
 ```cpp
 void traverse(Node* head) {
@@ -218,9 +202,6 @@ void traverse(Node* head) {
 }
 ```
 
-
-#### Java Implementation
-
 ```java
 void traverse(Node head) {
     if (head == null)
@@ -231,9 +212,6 @@ void traverse(Node head) {
 }
 ```
 
-
-#### Python Implementation
-
 ```python
 def traverse(head):
     if head is None:
@@ -243,16 +221,20 @@ def traverse(head):
     traverse(head.next)
 ```
 
-**Time Complexity**: $O(n)$
-**Space Complexity**: $O(n)$ due to recursive call stack
+
+### Time Complexity
+
+O(n) where n is the number of nodes in the linked list.
+
+### Space Complexity
+
+O(n) due to recursive call stack.
 
 ***
 
 ## Insertion Operations
 
 ### Insert at Beginning
-
-#### C++ Implementation
 
 ```cpp
 void push(struct Node** head_ref, int new_data) {
@@ -263,9 +245,6 @@ void push(struct Node** head_ref, int new_data) {
 }
 ```
 
-
-#### Java Implementation
-
 ```java
 Node push(Node head, int new_data) {
     Node new_node = new Node(new_data);
@@ -275,9 +254,6 @@ Node push(Node head, int new_data) {
 }
 ```
 
-
-#### Python Implementation
-
 ```python
 def push(head, new_data):
     new_node = Node(new_data)
@@ -286,13 +262,18 @@ def push(head, new_data):
     return head
 ```
 
-**Time Complexity**: $O(1)$
+
+### Time Complexity
+
+O(1) as we only need to adjust a few pointers.
+
+### Space Complexity
+
+O(1) as we only create one new node.
 
 ***
 
 ### Insert After a Given Node
-
-#### C++ Implementation
 
 ```cpp
 void insertAfter(struct Node* prev_node, int new_data) {
@@ -308,9 +289,6 @@ void insertAfter(struct Node* prev_node, int new_data) {
 }
 ```
 
-
-#### Java Implementation
-
 ```java
 void insertAfter(Node prev_node, int new_data) {
     if (prev_node == null) {
@@ -324,9 +302,6 @@ void insertAfter(Node prev_node, int new_data) {
 }
 ```
 
-
-#### Python Implementation
-
 ```python
 def insert_after(prev_node, new_data):
     if prev_node is None:
@@ -338,13 +313,18 @@ def insert_after(prev_node, new_data):
     prev_node.next = new_node
 ```
 
-**Time Complexity**: $O(1)$
+
+### Time Complexity
+
+O(1) as we only need to adjust pointers at the given position.
+
+### Space Complexity
+
+O(1) as we only create one new node.
 
 ***
 
 ### Insert at End
-
-#### C++ Implementation
 
 ```cpp
 void append(struct Node** head_ref, int new_data) {
@@ -366,9 +346,6 @@ void append(struct Node** head_ref, int new_data) {
 }
 ```
 
-
-#### Java Implementation
-
 ```java
 Node append(Node head, int new_data) {
     Node new_node = new Node(new_data);
@@ -387,9 +364,6 @@ Node append(Node head, int new_data) {
 }
 ```
 
-
-#### Python Implementation
-
 ```python
 def append(head, new_data):
     new_node = Node(new_data)
@@ -406,15 +380,20 @@ def append(head, new_data):
     return head
 ```
 
-**Time Complexity**: $O(n)$
+
+### Time Complexity
+
+O(n) where n is the number of nodes, as we need to traverse to the end.
+
+### Space Complexity
+
+O(1) as we only create one new node.
 
 ***
 
 ## Deletion Operations
 
 ### Delete at Given Position
-
-#### C++ Implementation
 
 ```cpp
 void deleteNode(struct Node** head_ref, int position) {
@@ -441,9 +420,6 @@ void deleteNode(struct Node** head_ref, int position) {
 }
 ```
 
-
-#### Java Implementation
-
 ```java
 Node deleteNode(Node head, int position) {
     if (head == null)
@@ -468,9 +444,6 @@ Node deleteNode(Node head, int position) {
     return head;
 }
 ```
-
-
-#### Python Implementation
 
 ```python
 def delete_node(head, position):
@@ -497,13 +470,18 @@ def delete_node(head, position):
     return head
 ```
 
-**Time Complexity**: $O(n)$
+
+### Time Complexity
+
+O(n) where n is the position of the node to be deleted.
+
+### Space Complexity
+
+O(1) as we only use a constant amount of extra space.
 
 ***
 
 ### Delete Given Node Pointer
-
-#### C++ Implementation
 
 ```cpp
 void deleteNode(struct Node* head, struct Node* node_ptr) {
@@ -526,9 +504,6 @@ void deleteNode(struct Node* head, struct Node* node_ptr) {
 }
 ```
 
-
-#### Java Implementation
-
 ```java
 void deleteNode(Node head, Node node_ptr) {
     if (head == null)
@@ -548,9 +523,6 @@ void deleteNode(Node head, Node node_ptr) {
 }
 ```
 
-
-#### Python Implementation
-
 ```python
 def delete_node(head, node_ptr):
     if head is None:
@@ -568,13 +540,18 @@ def delete_node(head, node_ptr):
     node_ptr.next = temp.next
 ```
 
-**Time Complexity**: $O(1)$ if not last node, $O(n)$ if last node
+
+### Time Complexity
+
+O(1) if the node to be deleted is not the last node, O(n) if it is the last node.
+
+### Space Complexity
+
+O(1) as we only use a constant amount of extra space.
 
 ***
 
 ### Delete First Node
-
-#### C++ Implementation
 
 ```cpp
 Node* removeFirstNode(struct Node* head) {
@@ -589,9 +566,6 @@ Node* removeFirstNode(struct Node* head) {
 }
 ```
 
-
-#### Java Implementation
-
 ```java
 Node removeFirstNode(Node head) {
     if (head == null)
@@ -602,9 +576,6 @@ Node removeFirstNode(Node head) {
 }
 ```
 
-
-#### Python Implementation
-
 ```python
 def remove_first_node(head):
     if head is None:
@@ -614,13 +585,18 @@ def remove_first_node(head):
     return head
 ```
 
-**Time Complexity**: $O(1)$
+
+### Time Complexity
+
+O(1) as we only need to update the head pointer.
+
+### Space Complexity
+
+O(1) as we only use a constant amount of extra space.
 
 ***
 
 ### Delete Last Node
-
-#### C++ Implementation
 
 ```cpp
 Node* removeLastNode(struct Node* head) {
@@ -643,9 +619,6 @@ Node* removeLastNode(struct Node* head) {
 }
 ```
 
-
-#### Java Implementation
-
 ```java
 Node removeLastNode(Node head) {
     if (head == null)
@@ -664,9 +637,6 @@ Node removeLastNode(Node head) {
 }
 ```
 
-
-#### Python Implementation
-
 ```python
 def remove_last_node(head):
     if head is None:
@@ -684,15 +654,20 @@ def remove_last_node(head):
     return head
 ```
 
-**Time Complexity**: $O(n)$
+
+### Time Complexity
+
+O(n) where n is the number of nodes, as we need to traverse to find the second last node.
+
+### Space Complexity
+
+O(1) as we only use a constant amount of extra space.
 
 ***
 
 ## Search Operations
 
 ### Iterative Search
-
-#### C++ Implementation
 
 ```cpp
 bool search(Node* head, int x) {
@@ -706,9 +681,6 @@ bool search(Node* head, int x) {
 }
 ```
 
-
-#### Java Implementation
-
 ```java
 boolean search(Node head, int x) {
     Node current = head;
@@ -721,9 +693,6 @@ boolean search(Node head, int x) {
 }
 ```
 
-
-#### Python Implementation
-
 ```python
 def search(head, x):
     current = head
@@ -734,14 +703,18 @@ def search(head, x):
     return False
 ```
 
-**Time Complexity**: $O(n)$
-**Space Complexity**: $O(1)$
+
+### Time Complexity
+
+O(n) where n is the number of nodes in the linked list.
+
+### Space Complexity
+
+O(1) as we only use a constant amount of extra space.
 
 ***
 
 ### Recursive Search
-
-#### C++ Implementation
 
 ```cpp
 bool search(struct Node* head, int x) {
@@ -755,9 +728,6 @@ bool search(struct Node* head, int x) {
 }
 ```
 
-
-#### Java Implementation
-
 ```java
 boolean search(Node head, int x) {
     if (head == null)
@@ -770,9 +740,6 @@ boolean search(Node head, int x) {
 }
 ```
 
-
-#### Python Implementation
-
 ```python
 def search(head, x):
     if head is None:
@@ -784,7 +751,15 @@ def search(head, x):
     return search(head.next, x)
 ```
 
-**Time Complexity**: $O(n)$
-**Space Complexity**: $O(n)$
+
+### Time Complexity
+
+O(n) where n is the number of nodes in the linked list.
+
+### Space Complexity
+
+O(n) due to recursive call stack.
 
 ***
+
+
