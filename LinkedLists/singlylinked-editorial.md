@@ -178,11 +178,12 @@ def print_list(node):
         node = node.next
 ```
 
- *** Time Complexity ***
+
+### Time Complexity
 
 O(n) where n is the number of nodes in the linked list.
 
- *** Space Complexity ***
+### Space Complexity
 
 O(1) as we only use a constant amount of extra space.
 
@@ -220,11 +221,11 @@ def traverse(head):
 ```
 
 
- *** Time Complexity  ***
+### Time Complexity
 
 O(n) where n is the number of nodes in the linked list.
 
-  *** Space Complexity  ***
+### Space Complexity
 
 O(n) due to recursive call stack.
 
@@ -261,12 +262,11 @@ def push(head, new_data):
 ```
 
 
- *** Time Complexity ***
+### Time Complexity
 
 O(1) as we only need to adjust a few pointers.
 
- *** Space Complexity ***
-
+### Space Complexity
 
 O(1) as we only create one new node.
 
@@ -313,11 +313,11 @@ def insert_after(prev_node, new_data):
 ```
 
 
- *** Time Complexity ***
+### Time Complexity
 
 O(1) as we only need to adjust pointers at the given position.
 
- *** Space Complexity ***
+### Space Complexity
 
 O(1) as we only create one new node.
 
@@ -380,11 +380,11 @@ def append(head, new_data):
 ```
 
 
- *** Time Complexity ***
+### Time Complexity
 
 O(n) where n is the number of nodes, as we need to traverse to the end.
 
- *** Space Complexity ***
+### Space Complexity
 
 O(1) as we only create one new node.
 
@@ -470,11 +470,11 @@ def delete_node(head, position):
 ```
 
 
- *** Time Complexity ***
+### Time Complexity
 
 O(n) where n is the position of the node to be deleted.
 
- *** Space Complexity ***
+### Space Complexity
 
 O(1) as we only use a constant amount of extra space.
 
@@ -540,11 +540,11 @@ def delete_node(head, node_ptr):
 ```
 
 
- *** Time Complexity ***
+### Time Complexity
 
 O(1) if the node to be deleted is not the last node, O(n) if it is the last node.
 
- *** Space Complexity  ***
+### Space Complexity
 
 O(1) as we only use a constant amount of extra space.
 
@@ -585,11 +585,11 @@ def remove_first_node(head):
 ```
 
 
- *** Time Complexity ***
+### Time Complexity
 
 O(1) as we only need to update the head pointer.
 
- *** Space Complexity ***
+### Space Complexity
 
 O(1) as we only use a constant amount of extra space.
 
@@ -654,11 +654,11 @@ def remove_last_node(head):
 ```
 
 
- *** Time Complexity ***
+### Time Complexity
 
 O(n) where n is the number of nodes, as we need to traverse to find the second last node.
 
- *** Space Complexity ***
+### Space Complexity
 
 O(1) as we only use a constant amount of extra space.
 
@@ -703,11 +703,11 @@ def search(head, x):
 ```
 
 
- *** Time Complexity  ***
+### Time Complexity
 
 O(n) where n is the number of nodes in the linked list.
 
- *** Space Complexity  ***
+### Space Complexity
 
 O(1) as we only use a constant amount of extra space.
 
@@ -751,10 +751,10 @@ def search(head, x):
 ```
 
 
- *** Time Complexity  ***
+### Time Complexity
 
 O(n) where n is the number of nodes in the linked list.
 
-*** Space Complexity ***
+### Space Complexity
 
 O(n) due to recursive call stack.
