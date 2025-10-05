@@ -1,15 +1,12 @@
-# Linked List: Complete Guide
+
+### Linked List : Complete Guide
 
 A linked list is a linear data structure where elements are stored at non-contiguous memory locations and linked together using pointers. Unlike arrays, linked lists provide dynamic size and efficient insertion/deletion operations.
-
-
 
 ## Structure of a Node
 
 Each node in a linked list contains two parts:
-
 **Data**: Stores the actual value or information.
-
 **Next Pointer**: Stores the address of the next node in memory.
 
 ### Implementation
@@ -24,11 +21,9 @@ struct Node {
 ```java
 class LinkedList {
     Node head;
-    
     class Node {
         int data;
         Node next;
-        
         Node(int d) { 
             data = d; 
         }
@@ -48,28 +43,19 @@ class LinkedList:
 ```
 
 
-
 ## Advantages Over Arrays
 
 **Dynamic Size**: The size can grow or shrink at runtime, unlike arrays with fixed size.
-
-**Efficient Insertion/Deletion**: No shifting of elements required. For example, inserting 1005 in a sorted array `[1000][1010][1050][2000][2040]` requires moving all elements after 1000, while in a linked list, you simply adjust pointers.
-
+**Efficient Insertion/Deletion**: No shifting of elements required.
 
 ## Disadvantages
 
-**No Random Access**: Elements must be accessed sequentially from the head, making binary search inefficient.
-
-**Extra Memory**: Each node requires additional memory for the pointer.
-
-**Poor Cache Locality**: Non-contiguous memory allocation results in worse performance compared to arrays.
-
-**Slow Traversal**: Accessing elements and changing pointers takes more time.
-
+**No Random Access**: Elements must be accessed sequentially.
+**Extra Memory**: Each node requires additional space for its pointer.
+**Poor Cache Locality**: Elements are not stored contiguously.
+**Slow Traversal**: Sequential access increases access time.
 
 ## Creating a Simple Linked List
-
-### Implementation
 
 ```cpp
 #include <bits/stdc++.h>
@@ -97,7 +83,6 @@ int main() {
     
     third->data = 3;
     third->next = NULL;
-    
     return 0;
 }
 ```
@@ -132,18 +117,14 @@ class Node:
         self.data = data
         self.next = None
 
-# Create nodes
 head = Node(1)
 second = Node(2)
 third = Node(3)
 
-# Link nodes
 head.next = second
 second.next = third
 third.next = None
 ```
-
-
 
 
 ## Traversal Operations
@@ -175,15 +156,8 @@ def print_list(node):
         node = node.next
 ```
 
-
-### Time Complexity
-
-O(n) where n is the number of nodes in the linked list.
-
-### Space Complexity
-
-O(1) as we only use a constant amount of extra space.
-
+Time Complexity: O(n)
+Space Complexity: O(1)
 
 ### Recursive Traversal
 
@@ -191,7 +165,6 @@ O(1) as we only use a constant amount of extra space.
 void traverse(Node* head) {
     if (head == NULL)
         return;
-    
     cout << head->data << " ";
     traverse(head->next);
 }
@@ -201,7 +174,6 @@ void traverse(Node* head) {
 void traverse(Node head) {
     if (head == null)
         return;
-    
     System.out.print(head.data + " ");
     traverse(head.next);
 }
@@ -211,20 +183,12 @@ void traverse(Node head) {
 def traverse(head):
     if head is None:
         return
-    
     print(head.data, end=" ")
     traverse(head.next)
 ```
 
-
-### Time Complexity
-
-O(n) where n is the number of nodes in the linked list.
-
-### Space Complexity
-
-O(n) due to recursive call stack.
-
+Time Complexity: O(n)
+Space Complexity: O(n)
 
 ## Insertion Operations
 
@@ -256,14 +220,8 @@ def push(head, new_data):
     return head
 ```
 
-
-### Time Complexity
-
-O(1) as we only need to adjust a few pointers.
-
-### Space Complexity
-
-O(1) as we only create one new node.
+Time Complexity: O(1)
+Space Complexity: O(1)
 
 ### Insert After a Given Node
 
@@ -273,7 +231,6 @@ void insertAfter(struct Node* prev_node, int new_data) {
         cout << "Previous node cannot be NULL";
         return;
     }
-    
     Node* new_node = new Node;
     new_node->data = new_data;
     new_node->next = prev_node->next;
@@ -287,7 +244,6 @@ void insertAfter(Node prev_node, int new_data) {
         System.out.println("Previous node cannot be null");
         return;
     }
-    
     Node new_node = new Node(new_data);
     new_node.next = prev_node.next;
     prev_node.next = new_node;
@@ -299,21 +255,13 @@ def insert_after(prev_node, new_data):
     if prev_node is None:
         print("Previous node cannot be None")
         return
-    
     new_node = Node(new_data)
     new_node.next = prev_node.next
     prev_node.next = new_node
 ```
 
-
-### Time Complexity
-
-O(1) as we only need to adjust pointers at the given position.
-
-### Space Complexity
-
-O(1) as we only create one new node.
-
+Time Complexity: O(1)
+Space Complexity: O(1)
 
 ### Insert at End
 
@@ -321,18 +269,14 @@ O(1) as we only create one new node.
 void append(struct Node** head_ref, int new_data) {
     Node* new_node = new Node;
     struct Node* last = *head_ref;
-    
     new_node->data = new_data;
     new_node->next = NULL;
-    
     if (*head_ref == NULL) {
         *head_ref = new_node;
         return;
     }
-    
     while (last->next != NULL)
         last = last->next;
-    
     last->next = new_node;
 }
 ```
@@ -340,16 +284,13 @@ void append(struct Node** head_ref, int new_data) {
 ```java
 Node append(Node head, int new_data) {
     Node new_node = new Node(new_data);
-    
     if (head == null) {
         head = new_node;
         return head;
     }
-    
     Node last = head;
     while (last.next != null)
         last = last.next;
-    
     last.next = new_node;
     return head;
 }
@@ -358,28 +299,18 @@ Node append(Node head, int new_data) {
 ```python
 def append(head, new_data):
     new_node = Node(new_data)
-    
     if head is None:
         head = new_node
         return head
-    
     last = head
     while last.next is not None:
         last = last.next
-    
     last.next = new_node
     return head
 ```
 
-
-### Time Complexity
-
-O(n) where n is the number of nodes, as we need to traverse to the end.
-
-### Space Complexity
-
-O(1) as we only create one new node.
-
+Time Complexity: O(n)
+Space Complexity: O(1)
 
 ## Deletion Operations
 
@@ -389,21 +320,16 @@ O(1) as we only create one new node.
 void deleteNode(struct Node** head_ref, int position) {
     if (*head_ref == NULL)
         return;
-    
     struct Node* temp = *head_ref;
-    
     if (position == 0) {
         *head_ref = temp->next;
         free(temp);
         return;
     }
-    
     for (int i = 0; temp != NULL && i < position - 1; i++)
         temp = temp->next;
-    
     if (temp == NULL || temp->next == NULL)
         return;
-    
     struct Node* next = temp->next->next;
     free(temp->next);
     temp->next = next;
@@ -414,23 +340,17 @@ void deleteNode(struct Node** head_ref, int position) {
 Node deleteNode(Node head, int position) {
     if (head == null)
         return null;
-    
     Node temp = head;
-    
     if (position == 0) {
         head = temp.next;
         return head;
     }
-    
     for (int i = 0; temp != null && i < position - 1; i++)
         temp = temp.next;
-    
     if (temp == null || temp.next == null)
         return head;
-    
     Node next = temp.next.next;
     temp.next = next;
-    
     return head;
 }
 ```
@@ -439,36 +359,23 @@ Node deleteNode(Node head, int position) {
 def delete_node(head, position):
     if head is None:
         return None
-    
     temp = head
-    
     if position == 0:
         head = temp.next
         return head
-    
     for i in range(position - 1):
         if temp is None:
             break
         temp = temp.next
-    
     if temp is None or temp.next is None:
         return head
-    
     next_node = temp.next.next
     temp.next = next_node
-    
     return head
 ```
 
-
-### Time Complexity
-
-O(n) where n is the position of the node to be deleted.
-
-### Space Complexity
-
-O(1) as we only use a constant amount of extra space.
-
+Time Complexity: O(n)
+Space Complexity: O(1)
 
 ### Delete Given Node Pointer
 
@@ -476,7 +383,6 @@ O(1) as we only use a constant amount of extra space.
 void deleteNode(struct Node* head, struct Node* node_ptr) {
     if (head == NULL)
         return;
-    
     if (node_ptr->next == NULL) {
         struct Node* temp = head;
         while (temp->next != node_ptr)
@@ -485,7 +391,6 @@ void deleteNode(struct Node* head, struct Node* node_ptr) {
         free(node_ptr);
         return;
     }
-    
     struct Node* temp = node_ptr->next;
     node_ptr->data = temp->data;
     node_ptr->next = temp->next;
@@ -497,7 +402,6 @@ void deleteNode(struct Node* head, struct Node* node_ptr) {
 void deleteNode(Node head, Node node_ptr) {
     if (head == null)
         return;
-    
     if (node_ptr.next == null) {
         Node temp = head;
         while (temp.next != node_ptr)
@@ -505,7 +409,6 @@ void deleteNode(Node head, Node node_ptr) {
         temp.next = null;
         return;
     }
-    
     Node temp = node_ptr.next;
     node_ptr.data = temp.data;
     node_ptr.next = temp.next;
@@ -516,28 +419,19 @@ void deleteNode(Node head, Node node_ptr) {
 def delete_node(head, node_ptr):
     if head is None:
         return
-    
     if node_ptr.next is None:
         temp = head
         while temp.next != node_ptr:
             temp = temp.next
         temp.next = None
         return
-    
     temp = node_ptr.next
     node_ptr.data = temp.data
     node_ptr.next = temp.next
 ```
 
-
-### Time Complexity
-
-O(1) if the node to be deleted is not the last node, O(n) if it is the last node.
-
-### Space Complexity
-
-O(1) as we only use a constant amount of extra space.
-
+Time Complexity: O(1) or O(n) if deleting the last node
+Space Complexity: O(1)
 
 ### Delete First Node
 
@@ -545,11 +439,9 @@ O(1) as we only use a constant amount of extra space.
 Node* removeFirstNode(struct Node* head) {
     if (head == NULL)
         return NULL;
-    
     Node* temp = head;
     head = head->next;
     delete temp;
-    
     return head;
 }
 ```
@@ -558,7 +450,6 @@ Node* removeFirstNode(struct Node* head) {
 Node removeFirstNode(Node head) {
     if (head == null)
         return null;
-    
     head = head.next;
     return head;
 }
@@ -568,20 +459,12 @@ Node removeFirstNode(Node head) {
 def remove_first_node(head):
     if head is None:
         return None
-    
     head = head.next
     return head
 ```
 
-
-### Time Complexity
-
-O(1) as we only need to update the head pointer.
-
-### Space Complexity
-
-O(1) as we only use a constant amount of extra space.
-
+Time Complexity: O(1)
+Space Complexity: O(1)
 
 ### Delete Last Node
 
@@ -589,19 +472,15 @@ O(1) as we only use a constant amount of extra space.
 Node* removeLastNode(struct Node* head) {
     if (head == NULL)
         return NULL;
-    
     if (head->next == NULL) {
         delete head;
         return NULL;
     }
-    
     Node* second_last = head;
     while (second_last->next->next != NULL)
         second_last = second_last->next;
-    
     delete(second_last->next);
     second_last->next = NULL;
-    
     return head;
 }
 ```
@@ -610,16 +489,12 @@ Node* removeLastNode(struct Node* head) {
 Node removeLastNode(Node head) {
     if (head == null)
         return null;
-    
     if (head.next == null)
         return null;
-    
     Node second_last = head;
     while (second_last.next.next != null)
         second_last = second_last.next;
-    
     second_last.next = null;
-    
     return head;
 }
 ```
@@ -628,28 +503,17 @@ Node removeLastNode(Node head) {
 def remove_last_node(head):
     if head is None:
         return None
-    
     if head.next is None:
         return None
-    
     second_last = head
     while second_last.next.next is not None:
         second_last = second_last.next
-    
     second_last.next = None
-    
     return head
 ```
 
-
-### Time Complexity
-
-O(n) where n is the number of nodes, as we need to traverse to find the second last node.
-
-### Space Complexity
-
-O(1) as we only use a constant amount of extra space.
-
+Time Complexity: O(n)
+Space Complexity: O(1)
 
 ## Search Operations
 
@@ -689,14 +553,8 @@ def search(head, x):
     return False
 ```
 
-
-### Time Complexity
-
-O(n) where n is the number of nodes in the linked list.
-
-### Space Complexity
-
-O(1) as we only use a constant amount of extra space.
+Time Complexity: O(n)
+Space Complexity: O(1)
 
 ### Recursive Search
 
@@ -704,10 +562,8 @@ O(1) as we only use a constant amount of extra space.
 bool search(struct Node* head, int x) {
     if (head == NULL)
         return false;
-    
     if (head->data == x)
         return true;
-    
     return search(head->next, x);
 }
 ```
@@ -716,10 +572,8 @@ bool search(struct Node* head, int x) {
 boolean search(Node head, int x) {
     if (head == null)
         return false;
-    
     if (head.data == x)
         return true;
-    
     return search(head.next, x);
 }
 ```
@@ -728,18 +582,11 @@ boolean search(Node head, int x) {
 def search(head, x):
     if head is None:
         return False
-    
     if head.data == x:
         return True
-    
     return search(head.next, x)
 ```
 
+Time Complexity: O(n)
+Space Complexity: O(n)
 
-### Time Complexity
-
-O(n) where n is the number of nodes in the linked list.
-
-### Space Complexity
-
-O(n) due to recursive call stack.
