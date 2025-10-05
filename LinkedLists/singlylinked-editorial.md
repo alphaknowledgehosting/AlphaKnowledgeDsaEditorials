@@ -1,4 +1,3 @@
-
 # Linked List: Complete Guide
 
 A linked list is a linear data structure where elements are stored at non-contiguous memory locations and linked together using pointers. Unlike arrays, linked lists provide dynamic size and efficient insertion/deletion operations.
@@ -759,7 +758,3 @@ O(n) where n is the number of nodes in the linked list.
 ### Space Complexity
 
 O(n) due to recursive call stack.
-
-***
-
-
