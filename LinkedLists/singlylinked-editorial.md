@@ -2,7 +2,7 @@
 
 A linked list is a linear data structure where elements are stored at non-contiguous memory locations and linked together using pointers. Unlike arrays, linked lists provide dynamic size and efficient insertion/deletion operations.
 
-***
+
 
 ## Structure of a Node
 
@@ -48,7 +48,6 @@ class LinkedList:
 ```
 
 
-***
 
 ## Advantages Over Arrays
 
@@ -56,7 +55,6 @@ class LinkedList:
 
 **Efficient Insertion/Deletion**: No shifting of elements required. For example, inserting 1005 in a sorted array `[1000][1010][1050][2000][2040]` requires moving all elements after 1000, while in a linked list, you simply adjust pointers.
 
-***
 
 ## Disadvantages
 
@@ -68,7 +66,6 @@ class LinkedList:
 
 **Slow Traversal**: Accessing elements and changing pointers takes more time.
 
-***
 
 ## Creating a Simple Linked List
 
@@ -147,7 +144,7 @@ third.next = None
 ```
 
 
-***
+
 
 ## Traversal Operations
 
@@ -187,7 +184,6 @@ O(n) where n is the number of nodes in the linked list.
 
 O(1) as we only use a constant amount of extra space.
 
-***
 
 ### Recursive Traversal
 
@@ -229,7 +225,6 @@ O(n) where n is the number of nodes in the linked list.
 
 O(n) due to recursive call stack.
 
-***
 
 ## Insertion Operations
 
@@ -269,8 +264,6 @@ O(1) as we only need to adjust a few pointers.
 ### Space Complexity
 
 O(1) as we only create one new node.
-
-***
 
 ### Insert After a Given Node
 
@@ -321,7 +314,6 @@ O(1) as we only need to adjust pointers at the given position.
 
 O(1) as we only create one new node.
 
-***
 
 ### Insert at End
 
@@ -388,7 +380,6 @@ O(n) where n is the number of nodes, as we need to traverse to the end.
 
 O(1) as we only create one new node.
 
-***
 
 ## Deletion Operations
 
@@ -478,7 +469,6 @@ O(n) where n is the position of the node to be deleted.
 
 O(1) as we only use a constant amount of extra space.
 
-***
 
 ### Delete Given Node Pointer
 
@@ -548,7 +538,6 @@ O(1) if the node to be deleted is not the last node, O(n) if it is the last node
 
 O(1) as we only use a constant amount of extra space.
 
-***
 
 ### Delete First Node
 
@@ -593,7 +582,6 @@ O(1) as we only need to update the head pointer.
 
 O(1) as we only use a constant amount of extra space.
 
-***
 
 ### Delete Last Node
 
@@ -662,7 +650,6 @@ O(n) where n is the number of nodes, as we need to traverse to find the second l
 
 O(1) as we only use a constant amount of extra space.
 
-***
 
 ## Search Operations
 
@@ -710,8 +697,6 @@ O(n) where n is the number of nodes in the linked list.
 ### Space Complexity
 
 O(1) as we only use a constant amount of extra space.
-
-***
 
 ### Recursive Search
 
