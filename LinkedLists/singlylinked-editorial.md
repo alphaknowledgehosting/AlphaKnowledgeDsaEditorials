@@ -1,16 +1,16 @@
 # Linked List: Complete Guide
 
-A linked list is a linear data structure where elements are stored at non-contiguous memory locations and linked together using pointers. Unlike arrays, linked lists provide dynamic size and efficient insertion/deletion operations.
+A linked list is a linear data structure where elements are stored at non-contiguous memory locations and linked together using pointers. Unlike arrays, linked lists provide dynamic size and efficient insertion/deletion operations.  
 
 ***
 
 ## Structure of a Node
 
-Each node in a linked list contains two parts:
+Each node in a linked list contains two parts: 
 
-**Data**: Stores the actual value or information.
+**Data**: Stores the actual value or information. 
 
-**Next Pointer**: Stores the address of the next node in memory.
+**Next Pointer**: Stores the address of the next node in memory. 
 
 ### Implementation
 
@@ -52,21 +52,21 @@ class LinkedList:
 
 ## Advantages Over Arrays
 
-**Dynamic Size**: The size can grow or shrink at runtime, unlike arrays with fixed size.
+**Dynamic Size**: The size can grow or shrink at runtime, unlike arrays with fixed size. 
 
-**Efficient Insertion/Deletion**: No shifting of elements required. For example, inserting 1005 in a sorted array `[1000][1010][1050][2000][2040]` requires moving all elements after 1000, while in a linked list, you simply adjust pointers.
+**Efficient Insertion/Deletion**: No shifting of elements required. For example, inserting 1005 in a sorted array `` requires moving all elements after 1000, while in a linked list, you simply adjust pointers. 
 
 ***
 
 ## Disadvantages
 
-**No Random Access**: Elements must be accessed sequentially from the head, making binary search inefficient.
+**No Random Access**: Elements must be accessed sequentially from the head, making binary search inefficient. 
 
-**Extra Memory**: Each node requires additional memory for the pointer.
+**Extra Memory**: Each node requires additional memory for the pointer. 
 
-**Poor Cache Locality**: Non-contiguous memory allocation results in worse performance compared to arrays.
+**Poor Cache Locality**: Non-contiguous memory allocation results in worse performance compared to arrays. 
 
-**Slow Traversal**: Accessing elements and changing pointers takes more time.
+**Slow Traversal**: Accessing elements and changing pointers takes more time. 
 
 ***
 
@@ -178,14 +178,9 @@ def print_list(node):
         node = node.next
 ```
 
+**Time Complexity**: O(n) where n is the number of nodes in the linked list. 
 
-### Time Complexity
-
-O(n) where n is the number of nodes in the linked list.
-
-### Space Complexity
-
-O(1) as we only use a constant amount of extra space.
+**Space Complexity**: O(1) as only a constant amount of extra space is used. 
 
 ***
 
@@ -220,14 +215,9 @@ def traverse(head):
     traverse(head.next)
 ```
 
+**Time Complexity**: O(n) where n is the number of nodes in the linked list. 
 
-### Time Complexity
-
-O(n) where n is the number of nodes in the linked list.
-
-### Space Complexity
-
-O(n) due to recursive call stack.
+**Space Complexity**: O(n) due to recursive call stack. 
 
 ***
 
@@ -261,14 +251,9 @@ def push(head, new_data):
     return head
 ```
 
+**Time Complexity**: O(1) as only a few pointers need to be adjusted. 
 
-### Time Complexity
-
-O(1) as we only need to adjust a few pointers.
-
-### Space Complexity
-
-O(1) as we only create one new node.
+**Space Complexity**: O(1) as only one new node is created. 
 
 ***
 
@@ -312,14 +297,9 @@ def insert_after(prev_node, new_data):
     prev_node.next = new_node
 ```
 
+**Time Complexity**: O(1) as only pointers at the given position need adjustment. 
 
-### Time Complexity
-
-O(1) as we only need to adjust pointers at the given position.
-
-### Space Complexity
-
-O(1) as we only create one new node.
+**Space Complexity**: O(1) as only one new node is created. 
 
 ***
 
@@ -379,14 +359,9 @@ def append(head, new_data):
     return head
 ```
 
+**Time Complexity**: O(n) where n is the number of nodes, as traversal to the end is required. 
 
-### Time Complexity
-
-O(n) where n is the number of nodes, as we need to traverse to the end.
-
-### Space Complexity
-
-O(1) as we only create one new node.
+**Space Complexity**: O(1) as only one new node is created. 
 
 ***
 
@@ -469,14 +444,9 @@ def delete_node(head, position):
     return head
 ```
 
+**Time Complexity**: O(n) where n is the position of the node to be deleted. 
 
-### Time Complexity
-
-O(n) where n is the position of the node to be deleted.
-
-### Space Complexity
-
-O(1) as we only use a constant amount of extra space.
+**Space Complexity**: O(1) as only a constant amount of extra space is used. 
 
 ***
 
@@ -539,14 +509,9 @@ def delete_node(head, node_ptr):
     node_ptr.next = temp.next
 ```
 
+**Time Complexity**: O(1) if the node to be deleted is not the last node, O(n) if it is the last node. 
 
-### Time Complexity
-
-O(1) if the node to be deleted is not the last node, O(n) if it is the last node.
-
-### Space Complexity
-
-O(1) as we only use a constant amount of extra space.
+**Space Complexity**: O(1) as only a constant amount of extra space is used. 
 
 ***
 
@@ -584,14 +549,9 @@ def remove_first_node(head):
     return head
 ```
 
+**Time Complexity**: O(1) as only the head pointer needs updating. 
 
-### Time Complexity
-
-O(1) as we only need to update the head pointer.
-
-### Space Complexity
-
-O(1) as we only use a constant amount of extra space.
+**Space Complexity**: O(1) as only a constant amount of extra space is used. 
 
 ***
 
@@ -653,14 +613,9 @@ def remove_last_node(head):
     return head
 ```
 
+**Time Complexity**: O(n) where n is the number of nodes, as traversal to find the second last node is required. 
 
-### Time Complexity
-
-O(n) where n is the number of nodes, as we need to traverse to find the second last node.
-
-### Space Complexity
-
-O(1) as we only use a constant amount of extra space.
+**Space Complexity**: O(1) as only a constant amount of extra space is used. 
 
 ***
 
@@ -702,59 +657,55 @@ def search(head, x):
     return False
 ```
 
+**Time Complexity**: O(n) where n is the number of nodes in the linked list.  
 
-### Time Complexity
-
-O(n) where n is the number of nodes in the linked list.
-
-### Space Complexity
-
-O(1) as we only use a constant amount of extra space.
+**Space Complexity**: O(1) as only a constant amount of extra space is used. 
 
 ***
 
 ### Recursive Search
 
 ```cpp
-bool search(struct Node* head, int x) {
-    if (head == NULL)
-        return false;
-    
-    if (head->data == x)
-        return true;
-    
-    return search(head->next, x);
-}
+class Solution {
+public:
+    bool search(Node* head, int x) {
+        if (head == NULL)
+            return false;
+        
+        if (head->data == x)
+            return true;
+        
+        return search(head->next, x);
+    }
+};
 ```
 
 ```java
-boolean search(Node head, int x) {
-    if (head == null)
-        return false;
-    
-    if (head.data == x)
-        return true;
-    
-    return search(head.next, x);
+class Solution {
+    public boolean search(Node head, int x) {
+        if (head == null)
+            return false;
+        
+        if (head.data == x)
+            return true;
+        
+        return search(head.next, x);
+    }
 }
 ```
 
 ```python
-def search(head, x):
-    if head is None:
-        return False
-    
-    if head.data == x:
-        return True
-    
-    return search(head.next, x)
+class Solution:
+    def search(self, head, x):
+        if head is None:
+            return False
+        
+        if head.data == x:
+            return True
+        
+        return self.search(head.next, x)
 ```
 
+**Time Complexity**: O(n) where n is the number of nodes in the linked list.
 
-### Time Complexity
-
-O(n) where n is the number of nodes in the linked list.
-
-### Space Complexity
-
-O(n) due to recursive call stack.
+**Space Complexity**: O(n) due to recursive call stack.
