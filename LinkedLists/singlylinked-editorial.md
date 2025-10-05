@@ -51,7 +51,7 @@ class LinkedList:
 
 ## Advantages Over Arrays
 
-**Dynamic Size**: The size can grow or shrink at runtime, unlike arrays with fixed size.
+**Dynamic Size**: The size can grow or shrink at runtime, unlike arrays with fixed size
 
 **Efficient Insertion/Deletion**: No shifting of elements required. For example, inserting 1005 in a sorted array `[1000][1010][1050][2000][2040]` requires moving all elements after 1000, while in a linked list, you simply adjust pointers.
 
