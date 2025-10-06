@@ -1,4 +1,4 @@
-### Circular Linked List: Complete Guide
+# Circular Linked List: Complete Guide
 
 A circular linked list is a linked list where all nodes are connected to form a circle. The last node points back to the first node, creating a circular structure. This data structure can be implemented as a singly circular linked list or doubly circular linked list.  
 

@@ -1,4 +1,4 @@
-### Doubly Linked List: Complete Guide
+# Doubly Linked List: Complete Guide
 
 A doubly linked list is a data structure where each node contains three parts: a data field and two pointer fields pointing to the previous and next nodes in the sequence. Unlike singly linked lists, doubly linked lists allow traversal in both forward and backward directions. 
 
