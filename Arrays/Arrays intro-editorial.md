@@ -66,7 +66,7 @@ arr = []
 
 **Fixed Size**: Array size cannot be changed after declaration in static arrays.
 
-**Costly Insertion/Deletion**: Requires shifting elements, resulting in O(n) time complexity.[^10]
+**Costly Insertion/Deletion**: Requires shifting elements, resulting in O(n) time complexity. [10]
 
 **Memory Waste**: Unused allocated space cannot be utilized by other variables.
 
@@ -215,7 +215,7 @@ def insert_at_end(arr, element):
 
 ### Time Complexity
 
-O(1) as the element is directly inserted at the end.[^10]
+O(1) as the element is directly inserted at the end. [10]
 
 ### Space Complexity
 
@@ -281,7 +281,7 @@ def insert_at_position(arr, pos, element):
 
 ### Time Complexity
 
-O(n) in worst case when inserting at the beginning, as all elements need to be shifted.[^10]
+O(n) in worst case when inserting at the beginning, as all elements need to be shifted. [10]
 
 ### Space Complexity
 
@@ -395,7 +395,7 @@ def delete_at_position(arr, pos):
 
 ### Time Complexity
 
-O(n) in worst case when deleting from the beginning, as all elements need to be shifted.[^10]
+O(n) in worst case when deleting from the beginning, as all elements need to be shifted. [10]
 
 ### Space Complexity
 
@@ -458,7 +458,7 @@ def delete_by_value(arr, value):
 
 ### Time Complexity
 
-O(n) as the element needs to be searched and then elements shifted.[^10]
+O(n) as the element needs to be searched and then elements shifted. [10]
 
 ### Space Complexity
 
@@ -501,7 +501,7 @@ def linear_search(arr, key):
 
 ### Time Complexity
 
-O(n) where n is the number of elements in the array.[^10]
+O(n) where n is the number of elements in the array. [10]
 
 ### Space Complexity
 
@@ -710,7 +710,7 @@ int linearSearch(int arr[], int n, int key) {
 }
 
 int main() {
-    int arr[^10] = {10, 20, 30, 40, 50};
+    int arr [10] = {10, 20, 30, 40, 50};
     int n = 5;
     int capacity = 10;
     
@@ -803,7 +803,7 @@ public class ArrayOperations {
     
     public static void main(String[] args) {
         int[] arr = new int[10];
-        arr[^0] = 10; arr  = 20; arr  = 30; arr  = 40; arr  = 50;
+        arr [0] = 10; arr  = 20; arr  = 30; arr  = 40; arr  = 50;
         int n = 5;
         
         System.out.print("Original array: ");

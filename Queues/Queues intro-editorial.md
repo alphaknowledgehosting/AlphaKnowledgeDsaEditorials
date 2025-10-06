@@ -69,7 +69,7 @@ class Queue:
         self.front = 0
         self.size = 0
         self.rear = capacity - 1
-        self.array = [^0] * capacity
+        self.array =  [0] * capacity
     
     def enqueue(self, x):
         pass
@@ -250,7 +250,7 @@ class Queue:
         self.front = 0
         self.size = 0
         self.rear = capacity - 1
-        self.array = [^0] * capacity
+        self.array =  [0] * capacity
     
     def is_full(self):
         return self.size == self.capacity
@@ -927,7 +927,7 @@ class Queue:
         self.front = 0
         self.size = 0
         self.rear = capacity - 1
-        self.array = [^0] * capacity
+        self.array =  [0] * capacity
     
     def is_full(self):
         return self.size == self.capacity
