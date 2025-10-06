@@ -447,15 +447,6 @@ int peek(StackNode* root) {
 }
 ```
 
-**Output:**
-
-```
-10 pushed to stack
-20 pushed to stack
-30 pushed to stack
-30 popped from stack
-Top element is 20
-```
 
 ```java
 class StackNode {
@@ -503,15 +494,6 @@ class LinkedStack {
 }
 ```
 
-**Output:**
-
-```
-10 pushed to stack
-20 pushed to stack
-30 pushed to stack
-30 popped from stack
-Top element is 20
-```
 
 ```python
 class StackNode:
@@ -655,16 +637,6 @@ int main() {
 }
 ```
 
-**Output:**
-
-```
-10 pushed into stack
-20 pushed into stack
-30 pushed into stack
-30 Popped from stack
-Top element is: 20
-Elements present in stack: 20 10
-```
 
 ```java
 class Stack {
@@ -726,16 +698,6 @@ class Stack {
 }
 ```
 
-**Output:**
-
-```
-10 pushed into stack
-20 pushed into stack
-30 pushed into stack
-30 Popped from stack
-Top element is: 20
-Elements present in stack: 20 10
-```
 
 ```python
 class Stack:
@@ -797,102 +759,3 @@ Top element is: 20
 Elements present in stack: 20 10
 ```
 
-
-## Stack Using Linked List - Complete Example
-
-```cpp
-#include <bits/stdc++.h>
-using namespace std;
-
-struct StackNode {
-    int data;
-    struct StackNode* next;
-};
-
-StackNode* newNode(int data) {
-    StackNode* stackNode = new StackNode();
-    stackNode->data = data;
-    stackNode->next = NULL;
-    return stackNode;
-}
-
-int isEmpty(StackNode* root) {
-    return !root;
-}
-
-void push(StackNode** root, int data) {
-    StackNode* stackNode = newNode(data);
-    stackNode->next = *root;
-    *root = stackNode;
-    cout << data << " pushed to stack" << endl;
-}
-
-int pop(StackNode** root) {
-    if (isEmpty(*root))
-        return INT_MIN;
-    StackNode* temp = *root;
-    *root = (*root)->next;
-    int popped = temp->data;
-    free(temp);
-    return popped;
-}
-
-int peek(StackNode* root) {
-    if (isEmpty(root))
-        return INT_MIN;
-    return root->data;
-}
-
-void display(StackNode* root) {
-    if (isEmpty(root)) {
-        cout << "Stack is empty" << endl;
-        return;
-    }
-    StackNode* temp = root;
-    cout << "Elements present in stack: ";
-    while (temp != NULL) {
-        cout << temp->data << " ";
-        temp = temp->next;
-    }
-    cout << endl;
-}
-
-int main() {
-    StackNode* root = NULL;
-    
-    push(&root, 10);
-    push(&root, 20);
-    push(&root, 30);
-    push(&root, 44);
-    
-    display(root);
-    
-    cout << "Top element is " << peek(root) << endl;
-    
-    cout << pop(&root) << " popped from stack" << endl;
-    cout << pop(&root) << " popped from stack" << endl;
-    
-    display(root);
-    
-    cout << "Top element is " << peek(root) << endl;
-    
-    return 0;
-}
-```
-
-**Output:**
-
-```
-10 pushed to stack
-20 pushed to stack
-30 pushed to stack
-44 pushed to stack
-Elements present in stack: 44 30 20 10
-Top element is 44
-44 popped from stack
-30 popped from stack
-Elements present in stack: 20 10
-Top element is 20
-```
-
-This comprehensive editorial covers stacks following the doubly linked list format with complete code implementations in C++, Java, and Python, including all outputs for every section.
