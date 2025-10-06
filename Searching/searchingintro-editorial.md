@@ -462,7 +462,7 @@ upper_bound for element 35 at position: 6
 
 ### Java Built-in Methods
 
-```cpp
+```java
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.ArrayList;
